@@ -1,0 +1,222 @@
+[omega] analyzing 35 hypotheses:
+    [Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     ¬3 ∣ y0,
+     ¬3 ∣ y1,
+     ¬3 ∣ y2,
+     ¬3 ∣ y3,
+     ¬3 ∣ y4,
+     ¬3 ∣ y5,
+     ¬3 ∣ y6,
+     ¬3 ∣ y7,
+     ¬3 ∣ y8,
+     ¬3 ∣ y9,
+     ¬3 ∣ y10,
+     ¬3 ∣ y11,
+     ¬3 ∣ y12,
+     ¬3 ∣ y13,
+     ¬3 ∣ y14,
+     ¬3 ∣ y15,
+     x < 0,
+     0 ≤ x]
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: ¬3 ∣ y0
+[omega] pushing negation: 3 ∣ y0
+[omega] adding fact: 3 = 0 ∨ 0 < y0 % 3
+[omega] adding fact: ¬3 ∣ y1
+[omega] pushing negation: 3 ∣ y1
+[omega] adding fact: 3 = 0 ∨ 0 < y1 % 3
+[omega] adding fact: ¬3 ∣ y2
+[omega] pushing negation: 3 ∣ y2
+[omega] adding fact: 3 = 0 ∨ 0 < y2 % 3
+[omega] adding fact: ¬3 ∣ y3
+[omega] pushing negation: 3 ∣ y3
+[omega] adding fact: 3 = 0 ∨ 0 < y3 % 3
+[omega] adding fact: ¬3 ∣ y4
+[omega] pushing negation: 3 ∣ y4
+[omega] adding fact: 3 = 0 ∨ 0 < y4 % 3
+[omega] adding fact: ¬3 ∣ y5
+[omega] pushing negation: 3 ∣ y5
+[omega] adding fact: 3 = 0 ∨ 0 < y5 % 3
+[omega] adding fact: ¬3 ∣ y6
+[omega] pushing negation: 3 ∣ y6
+[omega] adding fact: 3 = 0 ∨ 0 < y6 % 3
+[omega] adding fact: ¬3 ∣ y7
+[omega] pushing negation: 3 ∣ y7
+[omega] adding fact: 3 = 0 ∨ 0 < y7 % 3
+[omega] adding fact: ¬3 ∣ y8
+[omega] pushing negation: 3 ∣ y8
+[omega] adding fact: 3 = 0 ∨ 0 < y8 % 3
+[omega] adding fact: ¬3 ∣ y9
+[omega] pushing negation: 3 ∣ y9
+[omega] adding fact: 3 = 0 ∨ 0 < y9 % 3
+[omega] adding fact: ¬3 ∣ y10
+[omega] pushing negation: 3 ∣ y10
+[omega] adding fact: 3 = 0 ∨ 0 < y10 % 3
+[omega] adding fact: ¬3 ∣ y11
+[omega] pushing negation: 3 ∣ y11
+[omega] adding fact: 3 = 0 ∨ 0 < y11 % 3
+[omega] adding fact: ¬3 ∣ y12
+[omega] pushing negation: 3 ∣ y12
+[omega] adding fact: 3 = 0 ∨ 0 < y12 % 3
+[omega] adding fact: ¬3 ∣ y13
+[omega] pushing negation: 3 ∣ y13
+[omega] adding fact: 3 = 0 ∨ 0 < y13 % 3
+[omega] adding fact: ¬3 ∣ y14
+[omega] pushing negation: 3 ∣ y14
+[omega] adding fact: 3 = 0 ∨ 0 < y14 % 3
+[omega] adding fact: ¬3 ∣ y15
+[omega] pushing negation: 3 ∣ y15
+[omega] adding fact: 3 = 0 ∨ 0 < y15 % 3
+[omega] adding fact: x < 0
+[omega] adding fact: x + 1 ≤ 0
+[omega] adding fact: 0 ≤ 0 - (x + 1)
+[omega] processing 0 - (x + 1)
+[omega] processing 0
+[omega] processing x + 1
+[omega] processing x
+[omega] New atom: x
+[omega] processing 1
+[omega] Adding proof of -1 + -1 * x1 ≥ 0
+[omega] adding fact: 0 ≤ x
+[omega] Found in cache: x
+[omega] Adding proof of 0 + 1 * x1 ≥ 0
+[omega] Extracted linear arithmetic problem:
+    Atoms: [x]
+    impossible
+[omega] After elimination:
+    Atoms: [x]
+    impossible
+[omega] Justification:
+    [1] ∈ ∅: combination of:
+    • [1] ∈ [0, ∞): assumption 1
+    • [1] ∈ (-∞, -1]: tidying up:
+      • [-1] ∈ [1, ∞): assumption 0
+[omega] omega found a contradiction, proving False
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:73: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:89: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:105: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:121: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:137: warning: Variable name `h4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:153: warning: Variable name `h5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:169: warning: Variable name `h6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:185: warning: Variable name `h7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:201: warning: Variable name `h8` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h8
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:217: warning: Variable name `h9` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h9
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:233: warning: Variable name `h10` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h10
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:251: warning: Variable name `h11` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h11
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:269: warning: Variable name `h12` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h12
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:287: warning: Variable name `h13` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h13
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:305: warning: Variable name `h14` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h14
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega__W4_irrelevant_m16.lean:3:323: warning: Variable name `h15` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h15
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
