@@ -1,0 +1,146 @@
+[omega] analyzing 5 hypotheses:
+    [Int, Int, ¬k ∣ x, k ≠ 0, x % k = 0]
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: ¬k ∣ x
+[omega] pushing negation: k ∣ x
+[omega] adding fact: k = 0 ∨ 0 < x % k
+[omega] adding fact: ¬k = 0
+[omega] pushing negation: k = 0
+[omega] adding fact: k < 0 ∨ 0 < k
+[omega] adding fact: x % k = 0
+[omega] processing x % k
+[omega] New atom: x % k
+[omega] Adding proof of 0 + 1 * x1 = 0
+[omega] Extracted linear arithmetic problem:
+    Atoms: [x % k]
+    trivial
+[omega] After elimination:
+    Atoms: [x % k]
+    trivial
+[omega] Case splitting on k < 0 ∨ 0 < k
+[omega] ✅️ Assuming fact:
+      k < 0
+  [omega] adding fact: k < 0
+  [omega] adding fact: k + 1 ≤ 0
+  [omega] adding fact: 0 ≤ 0 - (k + 1)
+  [omega] processing 0 - (k + 1)
+  [omega] processing 0
+  [omega] processing k + 1
+  [omega] processing k
+  [omega] New atom: k
+  [omega] processing 1
+  [omega] Adding proof of -1 + 0 * x1 + -1 * x2 ≥ 0
+  [omega] Extracted linear arithmetic problem:
+      Atoms: [x % k, k]
+      [0, 1] ∈ (-∞, -1]
+  [omega] Running Fourier-Motzkin elimination on:
+      [0, 1] ∈ (-∞, -1]
+  [omega] Selecting variable to eliminate from (idx, size, exact) triples:
+      [(1, (0, true))]
+  [omega] Selected variable 1.
+  [omega] Running omega on:
+      trivial
+  [omega] After elimination:
+      Atoms: [x % k, k]
+      trivial
+  [omega] Case splitting on k = 0 ∨ 0 < x % k
+  [omega] ✅️ Assuming fact:
+        k = 0
+    [omega] adding fact: k = 0
+    [omega] Found in cache: k
+    [omega] Adding proof of 0 + 0 * x1 + 1 * x2 = 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [x % k, k]
+        impossible
+    [omega] After elimination:
+        Atoms: [x % k, k]
+        impossible
+    [omega] Justification:
+        [0, 1] ∈ ∅: combination of:
+        • [0, 1] ∈ {0}: assumption 2
+        • [0, 1] ∈ (-∞, -1]: tidying up:
+          • [0, -1] ∈ [1, ∞): assumption 1
+    [omega] omega found a contradiction, proving False
+  [omega] ✅️ Assuming fact:
+        0 < x % k
+    [omega] adding fact: 0 < x % k
+    [omega] adding fact: 0 + 1 ≤ x % k
+    [omega] adding fact: 0 ≤ x % k - (0 + 1)
+    [omega] processing x % k - (0 + 1)
+    [omega] Found in cache: x % k
+    [omega] processing 0 + 1
+    [omega] Adding proof of -1 + 1 * x1 ≥ 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [x % k, k]
+        impossible
+    [omega] After elimination:
+        Atoms: [x % k, k]
+        impossible
+    [omega] Justification:
+        [0] ∈ ∅: tidying up:
+        • [0] ∈ [1, ∞): -1 * x + 1 * y combo of:
+          • [1] ∈ {0}: assumption 0
+          • [1] ∈ [1, ∞): assumption 2
+    [omega] omega found a contradiction, proving False
+[omega] ✅️ Assuming fact:
+      0 < k
+  [omega] adding fact: 0 < k
+  [omega] adding fact: 0 + 1 ≤ k
+  [omega] adding fact: 0 ≤ k - (0 + 1)
+  [omega] processing k - (0 + 1)
+  [omega] processing k
+  [omega] New atom: k
+  [omega] processing 0 + 1
+  [omega] Adding proof of -1 + 0 * x1 + 1 * x2 ≥ 0
+  [omega] Extracted linear arithmetic problem:
+      Atoms: [x % k, k]
+      [0, 1] ∈ [1, ∞)
+  [omega] Running Fourier-Motzkin elimination on:
+      [0, 1] ∈ [1, ∞)
+  [omega] Selecting variable to eliminate from (idx, size, exact) triples:
+      [(1, (0, true))]
+  [omega] Selected variable 1.
+  [omega] Running omega on:
+      trivial
+  [omega] After elimination:
+      Atoms: [x % k, k]
+      trivial
+  [omega] Case splitting on k = 0 ∨ 0 < x % k
+  [omega] ✅️ Assuming fact:
+        k = 0
+    [omega] adding fact: k = 0
+    [omega] Found in cache: k
+    [omega] Adding proof of 0 + 0 * x1 + 1 * x2 = 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [x % k, k]
+        impossible
+    [omega] After elimination:
+        Atoms: [x % k, k]
+        impossible
+    [omega] Justification:
+        [0, 1] ∈ ∅: combination of:
+        • [0, 1] ∈ {0}: assumption 2
+        • [0, 1] ∈ [1, ∞): assumption 1
+    [omega] omega found a contradiction, proving False
+  [omega] ✅️ Assuming fact:
+        0 < x % k
+    [omega] adding fact: 0 < x % k
+    [omega] adding fact: 0 + 1 ≤ x % k
+    [omega] adding fact: 0 ≤ x % k - (0 + 1)
+    [omega] processing x % k - (0 + 1)
+    [omega] Found in cache: x % k
+    [omega] Found in cache: 0 + 1
+    [omega] Adding proof of -1 + 1 * x1 ≥ 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [x % k, k]
+        impossible
+    [omega] After elimination:
+        Atoms: [x % k, k]
+        impossible
+    [omega] Justification:
+        [0] ∈ ∅: tidying up:
+        • [0] ∈ [1, ∞): -1 * x + 1 * y combo of:
+          • [1] ∈ {0}: assumption 0
+          • [1] ∈ [1, ∞): assumption 2
+    [omega] omega found a contradiction, proving False
