@@ -1,0 +1,81 @@
+[omega] analyzing 4 hypotheses:
+    [Int, ¬3 - 3 ∣ x, x % 0 = 5, ¬x = 5]
+[omega] adding fact: Int
+[omega] adding fact: ¬3 - 3 ∣ x
+[omega] pushing negation: 3 - 3 ∣ x
+[omega] adding fact: 3 - 3 = 0 ∨ 0 < x % (3 - 3)
+[omega] adding fact: x % 0 = 5
+[omega] adding fact: x % 0 - 5 = 0
+[omega] processing x % 0 - 5
+[omega] processing x % 0
+[omega] rewriting x % 0 via Int.emod_def x 0 : x % 0 = x - 0 * (x / 0)
+[omega] processing x - 0 * (x / 0)
+[omega] processing x
+[omega] New atom: x
+[omega] processing 0 * (x / 0)
+[omega] processing 0
+[omega] processing x / 0
+[omega] rewriting x / 0 via Int.ediv_zero x : x / 0 = 0
+[omega] Found in cache: 0
+[omega] processing 5
+[omega] Adding proof of -5 + 1 * x1 = 0
+[omega] adding fact: ¬x = 5
+[omega] pushing negation: x = 5
+[omega] adding fact: x < 5 ∨ 5 < x
+[omega] Extracted linear arithmetic problem:
+    Atoms: [x]
+    trivial
+[omega] After elimination:
+    Atoms: [x]
+    trivial
+[omega] Case splitting on x < 5 ∨ 5 < x
+[omega] ✅️ Assuming fact:
+      x < 5
+  [omega] adding fact: x < 5
+  [omega] adding fact: x + 1 ≤ 5
+  [omega] adding fact: 0 ≤ 5 - (x + 1)
+  [omega] processing 5 - (x + 1)
+  [omega] Found in cache: 5
+  [omega] processing x + 1
+  [omega] Found in cache: x
+  [omega] processing 1
+  [omega] Adding proof of 4 + -1 * x1 ≥ 0
+  [omega] Extracted linear arithmetic problem:
+      Atoms: [x]
+      impossible
+  [omega] After elimination:
+      Atoms: [x]
+      impossible
+  [omega] Justification:
+      [0] ∈ ∅: tidying up:
+      • [0] ∈ [1, ∞): 1 * x + 1 * y combo of:
+        • [1] ∈ {5}: assumption 0
+        • [-1] ∈ [-4, ∞): assumption 1
+  [omega] omega found a contradiction, proving False
+[omega] ✅️ Assuming fact:
+      5 < x
+  [omega] adding fact: 5 < x
+  [omega] adding fact: 5 + 1 ≤ x
+  [omega] adding fact: 0 ≤ x - (5 + 1)
+  [omega] processing x - (5 + 1)
+  [omega] Found in cache: x
+  [omega] processing 5 + 1
+  [omega] Adding proof of -6 + 1 * x1 ≥ 0
+  [omega] Extracted linear arithmetic problem:
+      Atoms: [x]
+      impossible
+  [omega] After elimination:
+      Atoms: [x]
+      impossible
+  [omega] Justification:
+      [0] ∈ ∅: tidying up:
+      • [0] ∈ [1, ∞): -1 * x + 1 * y combo of:
+        • [1] ∈ {5}: assumption 0
+        • [1] ∈ [6, ∞): assumption 1
+  [omega] omega found a contradiction, proving False
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W10_expr_zero.lean:3:19: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

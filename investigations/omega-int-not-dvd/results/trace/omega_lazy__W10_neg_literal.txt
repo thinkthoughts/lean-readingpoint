@@ -1,0 +1,35 @@
+[omega] analyzing 3 hypotheses:
+    [Int, ¬-3 ∣ x, x % -3 = 0]
+[omega] adding fact: Int
+[omega] adding fact: ¬-3 ∣ x
+[omega] deferring fact: 0 < x % -3
+[omega] adding fact: x % -3 = 0
+[omega] processing x % -3
+[omega] New atom: x % -3
+[omega] Adding proof of 0 + 1 * x1 = 0
+[omega] Extracted linear arithmetic problem:
+    Atoms: [x % -3]
+    trivial
+[omega] After elimination:
+    Atoms: [x % -3]
+    trivial
+[omega] adding 1 deferred facts
+[omega] adding fact: 0 < x % -3
+[omega] adding fact: 0 + 1 ≤ x % -3
+[omega] adding fact: 0 ≤ x % -3 - (0 + 1)
+[omega] processing x % -3 - (0 + 1)
+[omega] Found in cache: x % -3
+[omega] processing 0 + 1
+[omega] Adding proof of -1 + 1 * x1 ≥ 0
+[omega] Extracted linear arithmetic problem:
+    Atoms: [x % -3]
+    impossible
+[omega] After elimination:
+    Atoms: [x % -3]
+    impossible
+[omega] Justification:
+    [0] ∈ ∅: tidying up:
+    • [0] ∈ [1, ∞): -1 * x + 1 * y combo of:
+      • [1] ∈ {0}: assumption 0
+      • [1] ∈ [1, ∞): assumption 1
+[omega] omega found a contradiction, proving False
