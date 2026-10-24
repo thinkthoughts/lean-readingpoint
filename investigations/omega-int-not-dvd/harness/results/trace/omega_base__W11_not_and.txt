@@ -1,0 +1,188 @@
+[omega] analyzing 3 hypotheses:
+    [Int, ¬(3 ∣ x ∧ 5 ∣ x), x % 15 = 0]
+[omega] adding fact: Int
+[omega] adding fact: ¬(3 ∣ x ∧ 5 ∣ x)
+[omega] pushing negation: 3 ∣ x ∧ 5 ∣ x
+[omega] adding fact: ¬3 ∣ x ∨ ¬5 ∣ x
+[omega] adding fact: x % 15 = 0
+[omega] processing x % 15
+[omega] rewriting x % 15 via Int.emod_def x 15 : x % 15 = x - 15 * (x / 15)
+[omega] processing x - 15 * (x / 15)
+[omega] processing x
+[omega] New atom: x
+[omega] processing 15 * (x / 15)
+[omega] processing 15
+[omega] processing x / 15
+[omega] New atom: x / 15
+[omega] New facts: [15 * (x / 15) ≤ x, x < 15 * (x / 15) + 15]
+[omega] Adding proof of 0 + 1 * x1 + -15 * x2 = 0
+[omega] adding fact: 15 * (x / 15) ≤ x
+[omega] adding fact: 0 ≤ x - 15 * (x / 15)
+[omega] Found in cache: x - 15 * (x / 15)
+[omega] Adding proof of 0 + 1 * x1 + -15 * x2 ≥ 0
+[omega] adding fact: x < 15 * (x / 15) + 15
+[omega] adding fact: x + 1 ≤ 15 * (x / 15) + 15
+[omega] adding fact: 0 ≤ 15 * (x / 15) + 15 - (x + 1)
+[omega] processing 15 * (x / 15) + 15 - (x + 1)
+[omega] processing 15 * (x / 15) + 15
+[omega] Found in cache: 15 * (x / 15)
+[omega] Found in cache: 15
+[omega] processing x + 1
+[omega] Found in cache: x
+[omega] processing 1
+[omega] Adding proof of 14 + -1 * x1 + 15 * x2 ≥ 0
+[omega] Extracted linear arithmetic problem:
+    Atoms: [x, x / 15]
+    trivial
+[omega] After elimination:
+    Atoms: [x, x / 15]
+    trivial
+[omega] Case splitting on ¬3 ∣ x ∨ ¬5 ∣ x
+[omega] ✅️ Assuming fact:
+      ¬3 ∣ x
+  [omega] adding fact: ¬3 ∣ x
+  [omega] pushing negation: 3 ∣ x
+  [omega] adding fact: 3 = 0 ∨ 0 < x % 3
+  [omega] Extracted linear arithmetic problem:
+      Atoms: [x, x / 15]
+      trivial
+  [omega] After elimination:
+      Atoms: [x, x / 15]
+      trivial
+  [omega] Case splitting on 3 = 0 ∨ 0 < x % 3
+  [omega] ✅️ Assuming fact:
+        3 = 0
+    [omega] adding fact: 3 = 0
+    [omega] processing 3
+    [omega] Adding proof of 3 = 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [x, x / 15]
+        impossible
+    [omega] After elimination:
+        Atoms: [x, x / 15]
+        impossible
+    [omega] Justification:
+        [] ∈ ∅: tidying up:
+        • [] ∈ {-3}: assumption 3
+    [omega] omega found a contradiction, proving False
+  [omega] ✅️ Assuming fact:
+        0 < x % 3
+    [omega] adding fact: 0 < x % 3
+    [omega] adding fact: 0 + 1 ≤ x % 3
+    [omega] adding fact: 0 ≤ x % 3 - (0 + 1)
+    [omega] processing x % 3 - (0 + 1)
+    [omega] processing x % 3
+    [omega] rewriting x % 3 via Int.emod_def x 3 : x % 3 = x - 3 * (x / 3)
+    [omega] processing x - 3 * (x / 3)
+    [omega] Found in cache: x
+    [omega] processing 3 * (x / 3)
+    [omega] processing 3
+    [omega] processing x / 3
+    [omega] New atom: x / 3
+    [omega] New facts: [3 * (x / 3) ≤ x, x < 3 * (x / 3) + 3]
+    [omega] processing 0 + 1
+    [omega] Adding proof of -1 + 1 * x1 + 0 * x2 + -3 * x3 ≥ 0
+    [omega] adding fact: 3 * (x / 3) ≤ x
+    [omega] adding fact: 0 ≤ x - 3 * (x / 3)
+    [omega] Found in cache: x - 3 * (x / 3)
+    [omega] Adding proof of 0 + 1 * x1 + 0 * x2 + -3 * x3 ≥ 0
+    [omega] adding fact: x < 3 * (x / 3) + 3
+    [omega] adding fact: x + 1 ≤ 3 * (x / 3) + 3
+    [omega] adding fact: 0 ≤ 3 * (x / 3) + 3 - (x + 1)
+    [omega] processing 3 * (x / 3) + 3 - (x + 1)
+    [omega] processing 3 * (x / 3) + 3
+    [omega] Found in cache: 3 * (x / 3)
+    [omega] Found in cache: 3
+    [omega] Found in cache: x + 1
+    [omega] Adding proof of 2 + -1 * x1 + 0 * x2 + 3 * x3 ≥ 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [x, x / 15, x / 3]
+        impossible
+    [omega] After elimination:
+        Atoms: [x, x / 15, x / 3]
+        impossible
+    [omega] Justification:
+        [0, 5, -1] ∈ ∅: combination of:
+        • [0, 5, -1] ∈ (-∞, 0]: tidying up:
+          • [0, -15, 3] ∈ [-2, ∞): 1 * x + 1 * y combo of:
+            • [1, -15] ∈ {0}: assumption 0
+            • [-1, 0, 3] ∈ [-2, ∞): assumption 5
+        • [0, 5, -1] ∈ [1, ∞): tidying up:
+          • [0, 15, -3] ∈ [1, ∞): -1 * x + 1 * y combo of:
+            • [1, -15] ∈ {0}: assumption 0
+            • [1, 0, -3] ∈ [1, ∞): assumption 3
+    [omega] omega found a contradiction, proving False
+[omega] ✅️ Assuming fact:
+      ¬5 ∣ x
+  [omega] adding fact: ¬5 ∣ x
+  [omega] pushing negation: 5 ∣ x
+  [omega] adding fact: 5 = 0 ∨ 0 < x % 5
+  [omega] Extracted linear arithmetic problem:
+      Atoms: [x, x / 15]
+      trivial
+  [omega] After elimination:
+      Atoms: [x, x / 15]
+      trivial
+  [omega] Case splitting on 5 = 0 ∨ 0 < x % 5
+  [omega] ✅️ Assuming fact:
+        5 = 0
+    [omega] adding fact: 5 = 0
+    [omega] processing 5
+    [omega] Adding proof of 5 = 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [x, x / 15]
+        impossible
+    [omega] After elimination:
+        Atoms: [x, x / 15]
+        impossible
+    [omega] Justification:
+        [] ∈ ∅: tidying up:
+        • [] ∈ {-5}: assumption 3
+    [omega] omega found a contradiction, proving False
+  [omega] ✅️ Assuming fact:
+        0 < x % 5
+    [omega] adding fact: 0 < x % 5
+    [omega] adding fact: 0 + 1 ≤ x % 5
+    [omega] adding fact: 0 ≤ x % 5 - (0 + 1)
+    [omega] processing x % 5 - (0 + 1)
+    [omega] processing x % 5
+    [omega] rewriting x % 5 via Int.emod_def x 5 : x % 5 = x - 5 * (x / 5)
+    [omega] processing x - 5 * (x / 5)
+    [omega] Found in cache: x
+    [omega] processing 5 * (x / 5)
+    [omega] processing 5
+    [omega] processing x / 5
+    [omega] New atom: x / 5
+    [omega] New facts: [5 * (x / 5) ≤ x, x < 5 * (x / 5) + 5]
+    [omega] processing 0 + 1
+    [omega] Adding proof of -1 + 1 * x1 + 0 * x2 + -5 * x3 ≥ 0
+    [omega] adding fact: 5 * (x / 5) ≤ x
+    [omega] adding fact: 0 ≤ x - 5 * (x / 5)
+    [omega] Found in cache: x - 5 * (x / 5)
+    [omega] Adding proof of 0 + 1 * x1 + 0 * x2 + -5 * x3 ≥ 0
+    [omega] adding fact: x < 5 * (x / 5) + 5
+    [omega] adding fact: x + 1 ≤ 5 * (x / 5) + 5
+    [omega] adding fact: 0 ≤ 5 * (x / 5) + 5 - (x + 1)
+    [omega] processing 5 * (x / 5) + 5 - (x + 1)
+    [omega] processing 5 * (x / 5) + 5
+    [omega] Found in cache: 5 * (x / 5)
+    [omega] Found in cache: 5
+    [omega] Found in cache: x + 1
+    [omega] Adding proof of 4 + -1 * x1 + 0 * x2 + 5 * x3 ≥ 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [x, x / 15, x / 5]
+        impossible
+    [omega] After elimination:
+        Atoms: [x, x / 15, x / 5]
+        impossible
+    [omega] Justification:
+        [0, 3, -1] ∈ ∅: combination of:
+        • [0, 3, -1] ∈ (-∞, 0]: tidying up:
+          • [0, -15, 5] ∈ [-4, ∞): 1 * x + 1 * y combo of:
+            • [1, -15] ∈ {0}: assumption 0
+            • [-1, 0, 5] ∈ [-4, ∞): assumption 5
+        • [0, 3, -1] ∈ [1, ∞): tidying up:
+          • [0, 15, -5] ∈ [1, ∞): -1 * x + 1 * y combo of:
+            • [1, -15] ∈ {0}: assumption 0
+            • [1, 0, -5] ∈ [1, ∞): assumption 3
+    [omega] omega found a contradiction, proving False

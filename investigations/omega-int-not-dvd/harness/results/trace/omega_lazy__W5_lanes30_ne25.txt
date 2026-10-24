@@ -1,0 +1,103 @@
+[omega] analyzing 5 hypotheses:
+    [Int, ¬2 ∣ n, ¬3 ∣ n, ¬5 ∣ n, n % 30 = 25]
+[omega] adding fact: Int
+[omega] adding fact: ¬2 ∣ n
+[omega] deferring fact: 0 < n % 2
+[omega] adding fact: ¬3 ∣ n
+[omega] deferring fact: 0 < n % 3
+[omega] adding fact: ¬5 ∣ n
+[omega] deferring fact: 0 < n % 5
+[omega] adding fact: n % 30 = 25
+[omega] adding fact: n % 30 - 25 = 0
+[omega] processing n % 30 - 25
+[omega] processing n % 30
+[omega] rewriting n % 30 via Int.emod_def n 30 : n % 30 = n - 30 * (n / 30)
+[omega] processing n - 30 * (n / 30)
+[omega] processing n
+[omega] New atom: n
+[omega] processing 30 * (n / 30)
+[omega] processing 30
+[omega] processing n / 30
+[omega] New atom: n / 30
+[omega] New facts: [30 * (n / 30) ≤ n, n < 30 * (n / 30) + 30]
+[omega] processing 25
+[omega] Adding proof of -25 + 1 * x1 + -30 * x2 = 0
+[omega] adding fact: 30 * (n / 30) ≤ n
+[omega] adding fact: 0 ≤ n - 30 * (n / 30)
+[omega] Found in cache: n - 30 * (n / 30)
+[omega] Adding proof of 0 + 1 * x1 + -30 * x2 ≥ 0
+[omega] adding fact: n < 30 * (n / 30) + 30
+[omega] adding fact: n + 1 ≤ 30 * (n / 30) + 30
+[omega] adding fact: 0 ≤ 30 * (n / 30) + 30 - (n + 1)
+[omega] processing 30 * (n / 30) + 30 - (n + 1)
+[omega] processing 30 * (n / 30) + 30
+[omega] Found in cache: 30 * (n / 30)
+[omega] Found in cache: 30
+[omega] processing n + 1
+[omega] Found in cache: n
+[omega] processing 1
+[omega] Adding proof of 29 + -1 * x1 + 30 * x2 ≥ 0
+[omega] Extracted linear arithmetic problem:
+    Atoms: [n, n / 30]
+    trivial
+[omega] After elimination:
+    Atoms: [n, n / 30]
+    trivial
+[omega] adding 3 deferred facts
+[omega] adding fact: 0 < n % 5
+[omega] adding fact: 0 + 1 ≤ n % 5
+[omega] adding fact: 0 ≤ n % 5 - (0 + 1)
+[omega] processing n % 5 - (0 + 1)
+[omega] processing n % 5
+[omega] rewriting n % 5 via Int.emod_def n 5 : n % 5 = n - 5 * (n / 5)
+[omega] processing n - 5 * (n / 5)
+[omega] Found in cache: n
+[omega] processing 5 * (n / 5)
+[omega] processing 5
+[omega] processing n / 5
+[omega] New atom: n / 5
+[omega] New facts: [5 * (n / 5) ≤ n, n < 5 * (n / 5) + 5]
+[omega] processing 0 + 1
+[omega] Adding proof of -1 + 1 * x1 + 0 * x2 + -5 * x3 ≥ 0
+[omega] adding fact: 5 * (n / 5) ≤ n
+[omega] adding fact: 0 ≤ n - 5 * (n / 5)
+[omega] Found in cache: n - 5 * (n / 5)
+[omega] Adding proof of 0 + 1 * x1 + 0 * x2 + -5 * x3 ≥ 0
+[omega] adding fact: n < 5 * (n / 5) + 5
+[omega] adding fact: n + 1 ≤ 5 * (n / 5) + 5
+[omega] adding fact: 0 ≤ 5 * (n / 5) + 5 - (n + 1)
+[omega] processing 5 * (n / 5) + 5 - (n + 1)
+[omega] processing 5 * (n / 5) + 5
+[omega] Found in cache: 5 * (n / 5)
+[omega] Found in cache: 5
+[omega] Found in cache: n + 1
+[omega] Adding proof of 4 + -1 * x1 + 0 * x2 + 5 * x3 ≥ 0
+[omega] Extracted linear arithmetic problem:
+    Atoms: [n, n / 30, n / 5]
+    impossible
+[omega] After elimination:
+    Atoms: [n, n / 30, n / 5]
+    impossible
+[omega] Justification:
+    [0, 6, -1] ∈ ∅: combination of:
+    • [0, 6, -1] ∈ (-∞, -5]: tidying up:
+      • [0, -30, 5] ∈ [21, ∞): 1 * x + 1 * y combo of:
+        • [1, -30] ∈ {25}: assumption 0
+        • [-1, 0, 5] ∈ [-4, ∞): assumption 5
+    • [0, 6, -1] ∈ [-4, ∞): tidying up:
+      • [0, 30, -5] ∈ [-24, ∞): -1 * x + 1 * y combo of:
+        • [1, -30] ∈ {25}: assumption 0
+        • [1, 0, -5] ∈ [1, ∞): assumption 3
+[omega] omega found a contradiction, proving False
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W5_lanes30_ne25.lean:3:19: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W5_lanes30_ne25.lean:3:34: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

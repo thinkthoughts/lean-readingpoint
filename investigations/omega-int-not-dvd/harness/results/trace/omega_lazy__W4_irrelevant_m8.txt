@@ -1,0 +1,118 @@
+[omega] analyzing 19 hypotheses:
+    [Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     Int,
+     ¬3 ∣ y0,
+     ¬3 ∣ y1,
+     ¬3 ∣ y2,
+     ¬3 ∣ y3,
+     ¬3 ∣ y4,
+     ¬3 ∣ y5,
+     ¬3 ∣ y6,
+     ¬3 ∣ y7,
+     x < 0,
+     0 ≤ x]
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: ¬3 ∣ y0
+[omega] deferring fact: 0 < y0 % 3
+[omega] adding fact: ¬3 ∣ y1
+[omega] deferring fact: 0 < y1 % 3
+[omega] adding fact: ¬3 ∣ y2
+[omega] deferring fact: 0 < y2 % 3
+[omega] adding fact: ¬3 ∣ y3
+[omega] deferring fact: 0 < y3 % 3
+[omega] adding fact: ¬3 ∣ y4
+[omega] deferring fact: 0 < y4 % 3
+[omega] adding fact: ¬3 ∣ y5
+[omega] deferring fact: 0 < y5 % 3
+[omega] adding fact: ¬3 ∣ y6
+[omega] deferring fact: 0 < y6 % 3
+[omega] adding fact: ¬3 ∣ y7
+[omega] deferring fact: 0 < y7 % 3
+[omega] adding fact: x < 0
+[omega] adding fact: x + 1 ≤ 0
+[omega] adding fact: 0 ≤ 0 - (x + 1)
+[omega] processing 0 - (x + 1)
+[omega] processing 0
+[omega] processing x + 1
+[omega] processing x
+[omega] New atom: x
+[omega] processing 1
+[omega] Adding proof of -1 + -1 * x1 ≥ 0
+[omega] adding fact: 0 ≤ x
+[omega] Found in cache: x
+[omega] Adding proof of 0 + 1 * x1 ≥ 0
+[omega] Extracted linear arithmetic problem:
+    Atoms: [x]
+    impossible
+[omega] After elimination:
+    Atoms: [x]
+    impossible
+[omega] Justification:
+    [1] ∈ ∅: combination of:
+    • [1] ∈ [0, ∞): assumption 1
+    • [1] ∈ (-∞, -1]: tidying up:
+      • [-1] ∈ [1, ∞): assumption 0
+[omega] omega found a contradiction, proving False
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W4_irrelevant_m8.lean:3:43: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W4_irrelevant_m8.lean:3:59: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W4_irrelevant_m8.lean:3:75: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W4_irrelevant_m8.lean:3:91: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W4_irrelevant_m8.lean:3:107: warning: Variable name `h4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W4_irrelevant_m8.lean:3:123: warning: Variable name `h5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W4_irrelevant_m8.lean:3:139: warning: Variable name `h6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/one/omega_lazy__W4_irrelevant_m8.lean:3:155: warning: Variable name `h7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
