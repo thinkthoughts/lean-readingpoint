@@ -1,0 +1,5 @@
+[omega] adding fact: ¬3 ∣ x
+[omega] deferring fact: 0 < x % 3
+[omega] adding 2 deferred facts
+[omega] adding fact: 0 < x % 3
+[omega] Extracted linear arithmetic problem:

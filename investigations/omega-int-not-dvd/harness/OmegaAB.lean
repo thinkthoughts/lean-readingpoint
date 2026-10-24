@@ -1,4 +1,6 @@
+import OmegaAB.Lemma
 import OmegaAB.Harness
 import OmegaAB.Baseline
-import OmegaAB.Patched2
-import OmegaAB.Patched3
+import OmegaAB.Eager
+import OmegaAB.Lazy
+import OmegaAB.GroundInt
