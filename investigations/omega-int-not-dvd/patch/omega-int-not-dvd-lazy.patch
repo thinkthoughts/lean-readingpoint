@@ -1,0 +1,74 @@
+diff -ru a/src/Init/Omega/Int.lean c/src/Init/Omega/Int.lean
+--- a/src/Init/Omega/Int.lean	2026-10-23 19:53:55.004673675 -0600
++++ c/src/Init/Omega/Int.lean	2026-10-23 19:54:30.523383005 -0600
+@@ -62,6 +62,10 @@
+ theorem emod_ofNat_nonneg {x : Nat} {y : Int} : 0 ≤ (x : Int) % y :=
+   Int.natCast_nonneg _
+ 
++theorem emod_pos_of_not_dvd_of_bne {a b : Int} (w : (a != 0) = true) (h : ¬ a ∣ b) :
++    0 < b % a :=
++  (Int.emod_pos_of_not_dvd h).resolve_left fun h0 => by simp [h0] at w
++
+ -- FIXME these are insane:
+ theorem lt_of_not_ge {x y : Int} (h : ¬ (x ≤ y)) : y < x := Int.not_le.mp h
+ theorem lt_of_not_le {x y : Int} (h : ¬ (x ≤ y)) : y < x := Int.not_le.mp h
+diff -ru a/src/Lean/Elab/Tactic/Omega/Frontend.lean c/src/Lean/Elab/Tactic/Omega/Frontend.lean
+--- a/src/Lean/Elab/Tactic/Omega/Frontend.lean	2026-10-23 19:53:54.997202972 -0600
++++ c/src/Lean/Elab/Tactic/Omega/Frontend.lean	2026-10-23 19:54:45.003418082 -0600
+@@ -65,6 +65,10 @@
+   Pending disjunctions, which we will case split one at a time if we can't get a contradiction.
+   -/
+   disjunctions : List Expr := []
++  /--
++  Facts to add if the problem is not refuted without them, before splitting any disjunction.
++  -/
++  pending : List Expr := []
+   /-- Facts which have already been processed; we keep these to avoid duplicates. -/
+   processedFacts : Std.HashSet Expr := ∅
+ 
+@@ -330,6 +334,15 @@
+       | _, _ => mkAtomLinearCombo e
+ 
+ end
++/-- For `h : ¬ (k : Int) ∣ x` with `k` a nonzero literal, return a proof of `0 < x % k`. -/
++def notDvdLit? (h P : Expr) : MetaM (Option Expr) := do
++  let_expr Dvd.dvd α _ k x := (← whnfR P) | return none
++  let_expr Int := α | return none
++  let some k' := groundInt? k | return none
++  if k' = 0 then return none
++  let w := mkApp2 (.const ``Eq.refl [1]) (.const ``Bool []) (.const ``Bool.true [])
++  return some (mkApp4 (.const ``Int.emod_pos_of_not_dvd_of_bne []) k x w h)
++
+ namespace MetaProblem
+ 
+ /-- The trivial `MetaProblem`, with no facts to process and a trivial `Problem`. -/
+@@ -399,7 +412,6 @@
+     | Dvd.dvd α _ k x => match_expr α with
+       | Nat => return some (mkApp3 (.const ``Nat.emod_pos_of_not_dvd []) k x h)
+       | Int =>
+-        -- This introduces a disjunction that could be avoided by checking `k ≠ 0`.
+         return some (mkApp3 (.const ``Int.emod_pos_of_not_dvd []) k x h)
+       | _ => return none
+     | Prod.Lex _ _ _ _ _ _ => return some (← mkAppM ``Prod.of_not_lex #[h])
+@@ -484,7 +496,10 @@
+         | Int => p.addFact (mkApp3 (.const ``Int.emod_eq_zero_of_dvd []) k x h)
+         | Nat => p.addFact (mkApp3 (.const ``Nat.mod_eq_zero_of_dvd []) k x h)
+         | _ => pure (p, 0)
+-      | Not P => match ← pushNot h P with
++      | Not P =>
++        if let some h' ← notDvdLit? h P then
++          return ({ p with pending := p.pending.insert h' }, 1)
++        match ← pushNot h P with
+         | none => return (p, 0)
+         | some h' => p.addFact h'
+       | Prod.Lex _ _ _ _ _ _ => p.addFact (← mkAppM ``Prod.of_lex #[h])
+@@ -655,7 +670,8 @@
+   trace[omega] "After elimination:\nAtoms: {← atomsList}\n{p'}"
+   match h₁ : p'.possible, h₂ : p'.proveFalse?, p'.proveFalse?_spec with
+   | true, _, _ =>
+-    splitDisjunction m
++    if m.pending.isEmpty then splitDisjunction m
++    else omegaImpl { m with facts := m.pending, pending := [] }
+   | false, .some prf, _ =>
+     trace[omega] "Justification:\n{p'.explanation?.get}"
+     let prf ← instantiateMVars (← prf)

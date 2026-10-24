@@ -1,0 +1,5 @@
+name = "OmegaAB"
+defaultTargets = ["OmegaAB"]
+[[lean_lib]]
+name = "OmegaAB"
+precompileModules = true

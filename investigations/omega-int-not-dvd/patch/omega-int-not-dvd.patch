@@ -1,0 +1,29 @@
+diff -ru a/src/Init/Omega/Int.lean b/src/Init/Omega/Int.lean
+--- a/src/Init/Omega/Int.lean	2026-10-23 19:53:55.004673675 -0600
++++ b/src/Init/Omega/Int.lean	2026-10-23 19:53:55.018912523 -0600
+@@ -62,6 +62,10 @@
+ theorem emod_ofNat_nonneg {x : Nat} {y : Int} : 0 ≤ (x : Int) % y :=
+   Int.natCast_nonneg _
+ 
++theorem emod_pos_of_not_dvd_of_bne {a b : Int} (w : (a != 0) = true) (h : ¬ a ∣ b) :
++    0 < b % a :=
++  (Int.emod_pos_of_not_dvd h).resolve_left fun h0 => by simp [h0] at w
++
+ -- FIXME these are insane:
+ theorem lt_of_not_ge {x y : Int} (h : ¬ (x ≤ y)) : y < x := Int.not_le.mp h
+ theorem lt_of_not_le {x y : Int} (h : ¬ (x ≤ y)) : y < x := Int.not_le.mp h
+diff -ru a/src/Lean/Elab/Tactic/Omega/Frontend.lean b/src/Lean/Elab/Tactic/Omega/Frontend.lean
+--- a/src/Lean/Elab/Tactic/Omega/Frontend.lean	2026-10-23 19:53:54.997202972 -0600
++++ b/src/Lean/Elab/Tactic/Omega/Frontend.lean	2026-10-23 19:53:55.018737835 -0600
+@@ -399,7 +399,10 @@
+     | Dvd.dvd α _ k x => match_expr α with
+       | Nat => return some (mkApp3 (.const ``Nat.emod_pos_of_not_dvd []) k x h)
+       | Int =>
+-        -- This introduces a disjunction that could be avoided by checking `k ≠ 0`.
++        if let some k' := groundInt? k then
++          if k' ≠ 0 then
++            let w := mkApp2 (.const ``Eq.refl [1]) (.const ``Bool []) (.const ``Bool.true [])
++            return some (mkApp4 (.const ``Int.emod_pos_of_not_dvd_of_bne []) k x w h)
+         return some (mkApp3 (.const ``Int.emod_pos_of_not_dvd []) k x h)
+       | _ => return none
+     | Prod.Lex _ _ _ _ _ _ => return some (← mkAppM ``Prod.of_not_lex #[h])
