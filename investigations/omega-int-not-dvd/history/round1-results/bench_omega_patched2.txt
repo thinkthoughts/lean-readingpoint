@@ -1,0 +1,662 @@
+BENCH R1_min time_us=4224 heartbeats=48787 proof_objs=1151
+BENCH W2_needed_m1 time_us=4508 heartbeats=52583 proof_objs=1330
+BENCH W2_needed_m2 time_us=7435 heartbeats=95056 proof_objs=2502
+BENCH W2_needed_m4 time_us=13741 heartbeats=188352 proof_objs=5603
+BENCH W2_needed_m8 time_us=28614 heartbeats=411922 proof_objs=14772
+BENCH W2_needed_m16 time_us=60536 heartbeats=995075 proof_objs=44852
+BENCH W3_eqgoal_m1 time_us=6129 heartbeats=73292 proof_objs=1552
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:9:36: warning: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W3_eqgoal_m2 time_us=10448 heartbeats=135596 proof_objs=2906
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:10:55: warning: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W3_eqgoal_m4 time_us=19332 heartbeats=279048 proof_objs=6474
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:11:93: warning: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W3_eqgoal_m8 time_us=39287 heartbeats=656405 proof_objs=17117
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:12:169: warning: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W4_irrelevant_m1 time_us=2146 heartbeats=21049 proof_objs=614
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:13:22: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W4_irrelevant_m4 time_us=4334 heartbeats=40247 proof_objs=968
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:14:31: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:14:47: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:14:63: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:14:79: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W4_irrelevant_m8 time_us=5633 heartbeats=67138 proof_objs=1442
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:15:43: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:15:59: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:15:75: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:15:91: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:15:107: warning: Variable name `h4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:15:123: warning: Variable name `h5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:15:139: warning: Variable name `h6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:15:155: warning: Variable name `h7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W4_irrelevant_m16 time_us=9793 heartbeats=122077 proof_objs=2370
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:73: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:89: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:105: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:121: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:137: warning: Variable name `h4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:153: warning: Variable name `h5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:169: warning: Variable name `h6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:185: warning: Variable name `h7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:201: warning: Variable name `h8` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h8
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:217: warning: Variable name `h9` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h9
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:233: warning: Variable name `h10` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h10
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:251: warning: Variable name `h11` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h11
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:269: warning: Variable name `h12` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h12
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:287: warning: Variable name `h13` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h13
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:305: warning: Variable name `h14` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h14
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:16:323: warning: Variable name `h15` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h15
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W5_lanes6 time_us=21340 heartbeats=289402 proof_objs=4949
+BENCH W5_lanes30_ne25 time_us=12533 heartbeats=153273 proof_objs=2846
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:18:34: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W6_natcast time_us=4743 heartbeats=51469 proof_objs=1296
+BENCH W7_symbolic_k time_us=2330 heartbeats=23467 proof_objs=1135
+BENCH W4N_irrelevant_nat_m1 time_us=2135 heartbeats=21284 proof_objs=623
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:21:22: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W4N_irrelevant_nat_m4 time_us=3543 heartbeats=41057 proof_objs=980
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:22:31: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:22:47: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:22:63: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:22:79: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W4N_irrelevant_nat_m8 time_us=5702 heartbeats=68666 proof_objs=1458
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:23:43: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:23:59: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:23:75: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:23:91: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:23:107: warning: Variable name `h4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:23:123: warning: Variable name `h5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:23:139: warning: Variable name `h6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:23:155: warning: Variable name `h7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W4N_irrelevant_nat_m16 time_us=9841 heartbeats=125297 proof_objs=2394
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:73: warning: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:89: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:105: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:121: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:137: warning: Variable name `h4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:153: warning: Variable name `h5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:169: warning: Variable name `h6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:185: warning: Variable name `h7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:201: warning: Variable name `h8` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h8
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:217: warning: Variable name `h9` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h9
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:233: warning: Variable name `h10` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h10
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:251: warning: Variable name `h11` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h11
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:269: warning: Variable name `h12` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h12
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:287: warning: Variable name `h13` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h13
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:305: warning: Variable name `h14` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h14
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:24:323: warning: Variable name `h15` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h15
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_dvd_then_ne_r1 time_us=4560 heartbeats=49592 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:25:36: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_ne_then_dvd_r1 time_us=4271 heartbeats=49606 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:26:22: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_dvd_then_ne_r2 time_us=4375 heartbeats=50447 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:27:39: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:27:53: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_ne_then_dvd_r2 time_us=4460 heartbeats=50399 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:28:25: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:28:39: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_dvd_then_ne_r4 time_us=6793 heartbeats=52035 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:29:45: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:29:59: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:29:73: warning: Variable name `n2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:29:87: warning: Variable name `n3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_ne_then_dvd_r4 time_us=4604 heartbeats=52061 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:30:31: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:30:45: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:30:59: warning: Variable name `n2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:30:73: warning: Variable name `n3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_dvd_then_ne_r6 time_us=4777 heartbeats=53765 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:31:51: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:31:65: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:31:79: warning: Variable name `n2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:31:93: warning: Variable name `n3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:31:107: warning: Variable name `n4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:31:121: warning: Variable name `n5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_ne_then_dvd_r6 time_us=4617 heartbeats=53804 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:32:37: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:32:51: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:32:65: warning: Variable name `n2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:32:79: warning: Variable name `n3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:32:93: warning: Variable name `n4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:32:107: warning: Variable name `n5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_dvd_then_ne_r8 time_us=4763 heartbeats=55362 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:33:57: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:33:71: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:33:85: warning: Variable name `n2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:33:99: warning: Variable name `n3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:33:113: warning: Variable name `n4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:33:127: warning: Variable name `n5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:33:141: warning: Variable name `n6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:33:155: warning: Variable name `n7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BENCH W8_ne_then_dvd_r8 time_us=4756 heartbeats=55467 proof_objs=1151
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:34:43: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:34:57: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:34:71: warning: Variable name `n2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:34:85: warning: Variable name `n3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:34:99: warning: Variable name `n4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:34:113: warning: Variable name `n5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:34:127: warning: Variable name `n6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/bench_omega_patched2.lean:34:141: warning: Variable name `n7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

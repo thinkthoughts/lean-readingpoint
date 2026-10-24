@@ -1,0 +1,73 @@
+[omega] analyzing 7 hypotheses:
+    [Int, Int, Int, ¬3 ∣ x, y0 ≠ 0, y1 ≠ 1, x % 3 = 0]
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: Int
+[omega] adding fact: ¬3 ∣ x
+[omega] pushing negation: 3 ∣ x
+[omega] adding fact: 0 < x % 3
+[omega] adding fact: 0 + 1 ≤ x % 3
+[omega] adding fact: 0 ≤ x % 3 - (0 + 1)
+[omega] processing x % 3 - (0 + 1)
+[omega] processing x % 3
+[omega] rewriting x % 3 via Int.emod_def x 3 : x % 3 = x - 3 * (x / 3)
+[omega] processing x - 3 * (x / 3)
+[omega] processing x
+[omega] New atom: x
+[omega] processing 3 * (x / 3)
+[omega] processing 3
+[omega] processing x / 3
+[omega] New atom: x / 3
+[omega] New facts: [3 * (x / 3) ≤ x, x < 3 * (x / 3) + 3]
+[omega] processing 0 + 1
+[omega] Adding proof of -1 + 1 * x1 + -3 * x2 ≥ 0
+[omega] adding fact: 3 * (x / 3) ≤ x
+[omega] adding fact: 0 ≤ x - 3 * (x / 3)
+[omega] Found in cache: x - 3 * (x / 3)
+[omega] Adding proof of 0 + 1 * x1 + -3 * x2 ≥ 0
+[omega] adding fact: x < 3 * (x / 3) + 3
+[omega] adding fact: x + 1 ≤ 3 * (x / 3) + 3
+[omega] adding fact: 0 ≤ 3 * (x / 3) + 3 - (x + 1)
+[omega] processing 3 * (x / 3) + 3 - (x + 1)
+[omega] processing 3 * (x / 3) + 3
+[omega] Found in cache: 3 * (x / 3)
+[omega] Found in cache: 3
+[omega] processing x + 1
+[omega] Found in cache: x
+[omega] processing 1
+[omega] Adding proof of 2 + -1 * x1 + 3 * x2 ≥ 0
+[omega] adding fact: ¬y0 = 0
+[omega] pushing negation: y0 = 0
+[omega] adding fact: y0 < 0 ∨ 0 < y0
+[omega] adding fact: ¬y1 = 1
+[omega] pushing negation: y1 = 1
+[omega] adding fact: y1 < 1 ∨ 1 < y1
+[omega] adding fact: x % 3 = 0
+[omega] Found in cache: x % 3
+[omega] Adding proof of 0 + 1 * x1 + -3 * x2 = 0
+[omega] Extracted linear arithmetic problem:
+    Atoms: [x, x / 3]
+    impossible
+[omega] After elimination:
+    Atoms: [x, x / 3]
+    impossible
+[omega] Justification:
+    [1, -3] ∈ ∅: combination of:
+    • [1, -3] ∈ {0}: assumption 3
+    • [1, -3] ∈ [1, 2]: combination of:
+      • [1, -3] ∈ (-∞, 2]: tidying up:
+        • [-1, 3] ∈ [-2, ∞): assumption 2
+      • [1, -3] ∈ [1, ∞): assumption 0
+[omega] omega found a contradiction, proving False
+/home/claude/omega-ab/bench/one/omega_patched2__W8_dvd_then_ne_r2.lean:3:39: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/omega-ab/bench/one/omega_patched2__W8_dvd_then_ne_r2.lean:3:53: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
