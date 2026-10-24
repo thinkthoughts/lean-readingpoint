@@ -1,0 +1,31 @@
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/hmod_int_sub__omega_base.lean:10:64: error: Application type mismatch: The argument
+  Eq.trans
+    (Lean.Omega.Int.sub_congr
+      (Eq.trans (Int.emod_def x 0)
+        (Eq.trans
+          (Lean.Omega.Int.sub_congr (Eq.symm Lean.Omega.LinearCombo.coordinate_eval_0)
+            (Eq.trans (Lean.Omega.Int.mul_congr (id (Eq.refl 0)) (Eq.trans (Int.ediv_zero x) (id (Eq.refl 0))))
+              (Eq.symm
+                (Lean.Omega.LinearCombo.mul_eval { } { } (Lean.Omega.Coeffs.ofList [x])
+                  (of_decide_eq_true (id (Eq.refl true)))))))
+          (Eq.symm (Lean.Omega.LinearCombo.sub_eval { coeffs := [1] } { } (Lean.Omega.Coeffs.ofList [x])))))
+      (id (Eq.refl 5)))
+    (Eq.symm (Lean.Omega.LinearCombo.sub_eval { coeffs := [1] } { const := 5 } (Lean.Omega.Coeffs.ofList [x])))
+has type
+  x % 0 - 5 = ({ coeffs := [1] } - { const := 5 }).eval (Lean.Omega.Coeffs.ofList [x])
+but is expected to have type
+  x % (0 - 3) - 5 = ?c
+in the application
+  le_of_le_of_eq (Int.sub_nonneg_of_le (Lean.Omega.Int.le_of_not_lt a✝))
+    (Eq.trans
+      (Lean.Omega.Int.sub_congr
+        (Eq.trans (Int.emod_def x 0)
+          (Eq.trans
+            (Lean.Omega.Int.sub_congr (Eq.symm Lean.Omega.LinearCombo.coordinate_eval_0)
+              (Eq.trans (Lean.Omega.Int.mul_congr (id (Eq.refl 0)) (Eq.trans (Int.ediv_zero x) (id (Eq.refl 0))))
+                (Eq.symm
+                  (Lean.Omega.LinearCombo.mul_eval { } { } (Lean.Omega.Coeffs.ofList [x])
+                    (of_decide_eq_true (id (Eq.refl true)))))))
+            (Eq.symm (Lean.Omega.LinearCombo.sub_eval { coeffs := [1] } { } (Lean.Omega.Coeffs.ofList [x])))))
+        (id (Eq.refl 5)))
+      (Eq.symm (Lean.Omega.LinearCombo.sub_eval { coeffs := [1] } { const := 5 } (Lean.Omega.Coeffs.ofList [x]))))

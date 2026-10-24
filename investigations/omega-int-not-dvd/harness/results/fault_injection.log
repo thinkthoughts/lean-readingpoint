@@ -1,0 +1,46 @@
+== toolchain
+Lean (version 4.37.0-nightly-2026-10-23, x86_64-unknown-linux-gnu, commit f37a0276ae8b0c60dd705920c49b9fd0c16279cf, Release)
+== prepare + build
+prepared: Baseline (upstream), Eager (patch/eager.patch), Lazy (patch/lazy.patch), Lemma; follow-up GroundInt (patch/followup-hmod-groundInt.patch)
+ok          lake build
+== 2. tests
+UNEXPECTED  omega correctness: expected to pass (exit 1)
+ok          omega limitations: passes
+UNEXPECTED  omega perf guard: expected 1 failure(s) matching 'maximum number of heartbeats \(1000\) has been reached' (exit 0, 0 error lines)
+ok          omega hmod repro: fails as expected (1 × Application type mismatch)
+ok          omega hmod cases: fails as expected (8 × Application type mismatch|omega could not prove the goal)
+UNEXPECTED  omega_base correctness: expected to pass (exit 1)
+ok          omega_base limitations: passes
+UNEXPECTED  omega_base perf guard: expected 1 failure(s) matching 'maximum number of heartbeats \(1000\) has been reached' (exit 0, 0 error lines)
+ok          omega_base hmod repro: fails as expected (1 × Application type mismatch)
+ok          omega_base hmod cases: fails as expected (8 × Application type mismatch|omega could not prove the goal)
+UNEXPECTED  omega_eager correctness: expected to pass (exit 1)
+ok          omega_eager limitations: passes
+ok          omega_eager perf guard: passes
+ok          omega_eager hmod repro: fails as expected (1 × Application type mismatch)
+ok          omega_eager hmod cases: fails as expected (8 × Application type mismatch|omega could not prove the goal)
+UNEXPECTED  omega_lazy correctness: expected to pass (exit 1)
+ok          omega_lazy limitations: passes
+ok          omega_lazy perf guard: passes
+ok          omega_lazy hmod repro: fails as expected (1 × Application type mismatch)
+ok          omega_lazy hmod cases: fails as expected (8 × Application type mismatch|omega could not prove the goal)
+== 2b. follow-up: groundInt? in the HMod case (patch/followup-hmod-groundInt.patch)
+UNEXPECTED  omega_gi correctness: expected to pass (exit 1)
+ok          omega_gi hmod repro: passes
+ok          omega_gi hmod cases: passes
+ok          omega_gi limitations: fails as expected (2 × succeeded but was expected to fail)
+== 3. Lean's own omega tests through each variant
+ok          core omega.lean: baseline passes (200 omega calls)
+ok          core omega.lean: omega_eager output identical to baseline
+ok          core omega.lean: omega_lazy output identical to baseline
+ok          core omega.lean: omega_gi output identical to baseline
+ok          core omega_examples.lean: baseline passes (13 omega calls)
+ok          core omega_examples.lean: omega_eager output identical to baseline
+ok          core omega_examples.lean: omega_lazy output identical to baseline
+ok          core omega_examples.lean: omega_gi output identical to baseline
+ok          core omegaCanon.lean: baseline passes (2 omega calls)
+ok          core omegaCanon.lean: omega_eager output identical to baseline
+ok          core omegaCanon.lean: omega_lazy output identical to baseline
+ok          core omegaCanon.lean: omega_gi output identical to baseline
+== summary
+7 UNEXPECTED RESULT(S)
