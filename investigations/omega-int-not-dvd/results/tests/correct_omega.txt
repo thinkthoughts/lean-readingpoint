@@ -1,0 +1,60 @@
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:18:19: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:18:34: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:33:19: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:34:19: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:35:19: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:39:21: warning: Variable name `n` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:44:19: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:45:19: warning: Variable name `h1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:45:34: warning: Variable name `h2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd__omega.lean:45:49: warning: Variable name `h3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

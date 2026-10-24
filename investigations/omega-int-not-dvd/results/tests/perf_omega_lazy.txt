@@ -1,0 +1,48 @@
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_perf__omega_lazy.lean:13:5: warning: Variable name `n0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_perf__omega_lazy.lean:13:19: warning: Variable name `n1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_perf__omega_lazy.lean:13:33: warning: Variable name `n2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_perf__omega_lazy.lean:13:47: warning: Variable name `n3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_perf__omega_lazy.lean:14:5: warning: Variable name `n4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_perf__omega_lazy.lean:14:19: warning: Variable name `n5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_perf__omega_lazy.lean:14:33: warning: Variable name `n6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_perf__omega_lazy.lean:14:47: warning: Variable name `n7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _n7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
