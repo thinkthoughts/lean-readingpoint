@@ -1,0 +1,293 @@
+[omega] analyzing 4 hypotheses:
+    [Int, ¬2 ∣ n, ¬3 ∣ n, ¬(n % 6 = 1 ∨ n % 6 = 5)]
+[omega] adding fact: Int
+[omega] adding fact: ¬2 ∣ n
+[omega] pushing negation: 2 ∣ n
+[omega] adding fact: 0 < n % 2
+[omega] adding fact: 0 + 1 ≤ n % 2
+[omega] adding fact: 0 ≤ n % 2 - (0 + 1)
+[omega] processing n % 2 - (0 + 1)
+[omega] processing n % 2
+[omega] rewriting n % 2 via Int.emod_def n 2 : n % 2 = n - 2 * (n / 2)
+[omega] processing n - 2 * (n / 2)
+[omega] processing n
+[omega] New atom: n
+[omega] processing 2 * (n / 2)
+[omega] processing 2
+[omega] processing n / 2
+[omega] New atom: n / 2
+[omega] New facts: [2 * (n / 2) ≤ n, n < 2 * (n / 2) + 2]
+[omega] processing 0 + 1
+[omega] Adding proof of -1 + 1 * x1 + -2 * x2 ≥ 0
+[omega] adding fact: 2 * (n / 2) ≤ n
+[omega] adding fact: 0 ≤ n - 2 * (n / 2)
+[omega] Found in cache: n - 2 * (n / 2)
+[omega] Adding proof of 0 + 1 * x1 + -2 * x2 ≥ 0
+[omega] adding fact: n < 2 * (n / 2) + 2
+[omega] adding fact: n + 1 ≤ 2 * (n / 2) + 2
+[omega] adding fact: 0 ≤ 2 * (n / 2) + 2 - (n + 1)
+[omega] processing 2 * (n / 2) + 2 - (n + 1)
+[omega] processing 2 * (n / 2) + 2
+[omega] Found in cache: 2 * (n / 2)
+[omega] Found in cache: 2
+[omega] processing n + 1
+[omega] Found in cache: n
+[omega] processing 1
+[omega] Adding proof of 1 + -1 * x1 + 2 * x2 ≥ 0
+[omega] adding fact: ¬3 ∣ n
+[omega] pushing negation: 3 ∣ n
+[omega] adding fact: 0 < n % 3
+[omega] adding fact: 0 + 1 ≤ n % 3
+[omega] adding fact: 0 ≤ n % 3 - (0 + 1)
+[omega] processing n % 3 - (0 + 1)
+[omega] processing n % 3
+[omega] rewriting n % 3 via Int.emod_def n 3 : n % 3 = n - 3 * (n / 3)
+[omega] processing n - 3 * (n / 3)
+[omega] Found in cache: n
+[omega] processing 3 * (n / 3)
+[omega] processing 3
+[omega] processing n / 3
+[omega] New atom: n / 3
+[omega] New facts: [3 * (n / 3) ≤ n, n < 3 * (n / 3) + 3]
+[omega] Found in cache: 0 + 1
+[omega] Adding proof of -1 + 1 * x1 + 0 * x2 + -3 * x3 ≥ 0
+[omega] adding fact: 3 * (n / 3) ≤ n
+[omega] adding fact: 0 ≤ n - 3 * (n / 3)
+[omega] Found in cache: n - 3 * (n / 3)
+[omega] Adding proof of 0 + 1 * x1 + 0 * x2 + -3 * x3 ≥ 0
+[omega] adding fact: n < 3 * (n / 3) + 3
+[omega] adding fact: n + 1 ≤ 3 * (n / 3) + 3
+[omega] adding fact: 0 ≤ 3 * (n / 3) + 3 - (n + 1)
+[omega] processing 3 * (n / 3) + 3 - (n + 1)
+[omega] processing 3 * (n / 3) + 3
+[omega] Found in cache: 3 * (n / 3)
+[omega] Found in cache: 3
+[omega] Found in cache: n + 1
+[omega] Adding proof of 2 + -1 * x1 + 0 * x2 + 3 * x3 ≥ 0
+[omega] adding fact: ¬(n % 6 = 1 ∨ n % 6 = 5)
+[omega] pushing negation: n % 6 = 1 ∨ n % 6 = 5
+[omega] adding fact: ¬n % 6 = 1 ∧ ¬n % 6 = 5
+[omega] adding fact: ¬n % 6 = 1
+[omega] pushing negation: n % 6 = 1
+[omega] adding fact: n % 6 < 1 ∨ 1 < n % 6
+[omega] adding fact: ¬n % 6 = 5
+[omega] pushing negation: n % 6 = 5
+[omega] adding fact: n % 6 < 5 ∨ 5 < n % 6
+[omega] Extracted linear arithmetic problem:
+    Atoms: [n, n / 2, n / 3]
+    [0, 2, -3] ∈ [0, 1]
+[omega] Running Fourier-Motzkin elimination on:
+    [0, 2, -3] ∈ [0, 1]
+[omega] Selecting variable to eliminate from (idx, size, exact) triples:
+    [(1, (1, false)), (2, (1, false))]
+[omega] Selected variable 1.
+[omega] Running omega on:
+    trivial
+[omega] After elimination:
+    Atoms: [n, n / 2, n / 3]
+    trivial
+[omega] Case splitting on n % 6 < 5 ∨ 5 < n % 6
+[omega] ✅️ Assuming fact:
+      n % 6 < 5
+  [omega] adding fact: n % 6 < 5
+  [omega] adding fact: n % 6 + 1 ≤ 5
+  [omega] adding fact: 0 ≤ 5 - (n % 6 + 1)
+  [omega] processing 5 - (n % 6 + 1)
+  [omega] processing 5
+  [omega] processing n % 6 + 1
+  [omega] processing n % 6
+  [omega] rewriting n % 6 via Int.emod_def n 6 : n % 6 = n - 6 * (n / 6)
+  [omega] processing n - 6 * (n / 6)
+  [omega] Found in cache: n
+  [omega] processing 6 * (n / 6)
+  [omega] processing 6
+  [omega] processing n / 6
+  [omega] New atom: n / 6
+  [omega] New facts: [6 * (n / 6) ≤ n, n < 6 * (n / 6) + 6]
+  [omega] Found in cache: 1
+  [omega] Adding proof of 4 + -1 * x1 + 0 * x2 + 0 * x3 + 6 * x4 ≥ 0
+  [omega] adding fact: 6 * (n / 6) ≤ n
+  [omega] adding fact: 0 ≤ n - 6 * (n / 6)
+  [omega] Found in cache: n - 6 * (n / 6)
+  [omega] Adding proof of 0 + 1 * x1 + 0 * x2 + 0 * x3 + -6 * x4 ≥ 0
+  [omega] adding fact: n < 6 * (n / 6) + 6
+  [omega] adding fact: n + 1 ≤ 6 * (n / 6) + 6
+  [omega] adding fact: 0 ≤ 6 * (n / 6) + 6 - (n + 1)
+  [omega] processing 6 * (n / 6) + 6 - (n + 1)
+  [omega] processing 6 * (n / 6) + 6
+  [omega] Found in cache: 6 * (n / 6)
+  [omega] Found in cache: 6
+  [omega] Found in cache: n + 1
+  [omega] Adding proof of 5 + -1 * x1 + 0 * x2 + 0 * x3 + 6 * x4 ≥ 0
+  [omega] Extracted linear arithmetic problem:
+      Atoms: [n, n / 2, n / 3, n / 6]
+      [0, 1, 0, -3] ∈ [0, 1]
+      [0, 2, -3] ∈ [0, 1]
+  [omega] Running Fourier-Motzkin elimination on:
+      [0, 1, 0, -3] ∈ [0, 1]
+      [0, 2, -3] ∈ [0, 1]
+  [omega] Selecting variable to eliminate from (idx, size, exact) triples:
+      [(1, (4, false)), (2, (1, false)), (3, (1, false))]
+  [omega] Selected variable 2.
+  [omega] Running omega on:
+      [0, 1, 0, -3] ∈ [0, 1]
+  [omega] Running Fourier-Motzkin elimination on:
+      [0, 1, 0, -3] ∈ [0, 1]
+  [omega] Selecting variable to eliminate from (idx, size, exact) triples:
+      [(1, (1, true)), (3, (1, false))]
+  [omega] Selected variable 1.
+  [omega] Running omega on:
+      trivial
+  [omega] After elimination:
+      Atoms: [n, n / 2, n / 3, n / 6]
+      trivial
+  [omega] Case splitting on n % 6 < 1 ∨ 1 < n % 6
+  [omega] ✅️ Assuming fact:
+        n % 6 < 1
+    [omega] adding fact: n % 6 < 1
+    [omega] adding fact: n % 6 + 1 ≤ 1
+    [omega] adding fact: 0 ≤ 1 - (n % 6 + 1)
+    [omega] processing 1 - (n % 6 + 1)
+    [omega] Found in cache: 1
+    [omega] Found in cache: n % 6 + 1
+    [omega] Adding proof of 0 + -1 * x1 + 0 * x2 + 0 * x3 + 6 * x4 ≥ 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [n, n / 2, n / 3, n / 6]
+        impossible
+    [omega] After elimination:
+        Atoms: [n, n / 2, n / 3, n / 6]
+        impossible
+    [omega] Justification:
+        [0, 1, 0, -3] ∈ ∅: combination of:
+        • [0, 1, 0, -3] ∈ (-∞, -1]: tidying up:
+          • [0, -2, 0, 6] ∈ [1, ∞): 1 * x + 1 * y combo of:
+            • [1, -2] ∈ {1}: combination of:
+              • [1, -2] ∈ (-∞, 1]: tidying up:
+                • [-1, 2] ∈ [-1, ∞): assumption 2
+              • [1, -2] ∈ [1, ∞): assumption 0
+            • [-1, 0, 0, 6] ∈ [0, ∞): assumption 9
+        • [0, 1, 0, -3] ∈ [0, 1]: combination of:
+          • [0, 1, 0, -3] ∈ [0, ∞): tidying up:
+            • [0, 2, 0, -6] ∈ [-1, ∞): -1 * x + 1 * y combo of:
+              • [1, -2] ∈ {1}: combination of:
+                • [1, -2] ∈ (-∞, 1]: tidying up:
+                  • [-1, 2] ∈ [-1, ∞): assumption 2
+                • [1, -2] ∈ [1, ∞): assumption 0
+              • [1, 0, 0, -6] ∈ [0, ∞): assumption 7
+          • [0, 1, 0, -3] ∈ (-∞, 1]: tidying up:
+            • [0, -2, 0, 6] ∈ [-3, ∞): 1 * x + 1 * y combo of:
+              • [1, -2] ∈ {1}: combination of:
+                • [1, -2] ∈ (-∞, 1]: tidying up:
+                  • [-1, 2] ∈ [-1, ∞): assumption 2
+                • [1, -2] ∈ [1, ∞): assumption 0
+              • [-1, 0, 0, 6] ∈ [-4, ∞): assumption 6
+    [omega] omega found a contradiction, proving False
+  [omega] ✅️ Assuming fact:
+        1 < n % 6
+    [omega] adding fact: 1 < n % 6
+    [omega] adding fact: 1 + 1 ≤ n % 6
+    [omega] adding fact: 0 ≤ n % 6 - (1 + 1)
+    [omega] processing n % 6 - (1 + 1)
+    [omega] Found in cache: n % 6
+    [omega] processing 1 + 1
+    [omega] Adding proof of -2 + 1 * x1 + 0 * x2 + 0 * x3 + -6 * x4 ≥ 0
+    [omega] Extracted linear arithmetic problem:
+        Atoms: [n, n / 2, n / 3, n / 6]
+        impossible
+    [omega] After elimination:
+        Atoms: [n, n / 2, n / 3, n / 6]
+        impossible
+    [omega] Justification:
+        [0, 0, 1, -2] ∈ ∅: tidying up:
+        • [0, 0, -3, 6] ∈ [-2, -1]: -2 * x + 1 * y combo of:
+          • [0, 1, 0, -3] ∈ {1}: combination of:
+            • [0, 1, 0, -3] ∈ [1, ∞): tidying up:
+              • [0, 2, 0, -6] ∈ [1, ∞): -1 * x + 1 * y combo of:
+                • [1, -2] ∈ {1}: combination of:
+                  • [1, -2] ∈ (-∞, 1]: tidying up:
+                    • [-1, 2] ∈ [-1, ∞): assumption 2
+                  • [1, -2] ∈ [1, ∞): assumption 0
+                • [1, 0, 0, -6] ∈ [2, ∞): assumption 9
+            • [0, 1, 0, -3] ∈ [0, 1]: combination of:
+              • [0, 1, 0, -3] ∈ [0, ∞): tidying up:
+                • [0, 2, 0, -6] ∈ [-1, ∞): -1 * x + 1 * y combo of:
+                  • [1, -2] ∈ {1}: combination of:
+                    • [1, -2] ∈ (-∞, 1]: tidying up:
+                      • [-1, 2] ∈ [-1, ∞): assumption 2
+                    • [1, -2] ∈ [1, ∞): assumption 0
+                  • [1, 0, 0, -6] ∈ [0, ∞): assumption 7
+              • [0, 1, 0, -3] ∈ (-∞, 1]: tidying up:
+                • [0, -2, 0, 6] ∈ [-3, ∞): 1 * x + 1 * y combo of:
+                  • [1, -2] ∈ {1}: combination of:
+                    • [1, -2] ∈ (-∞, 1]: tidying up:
+                      • [-1, 2] ∈ [-1, ∞): assumption 2
+                    • [1, -2] ∈ [1, ∞): assumption 0
+                  • [-1, 0, 0, 6] ∈ [-4, ∞): assumption 6
+          • [0, 2, -3] ∈ [0, 1]: combination of:
+            • [0, 2, -3] ∈ (-∞, 1]: tidying up:
+              • [0, -2, 3] ∈ [-1, ∞): 1 * x + 1 * y combo of:
+                • [1, -2] ∈ {1}: combination of:
+                  • [1, -2] ∈ (-∞, 1]: tidying up:
+                    • [-1, 2] ∈ [-1, ∞): assumption 2
+                  • [1, -2] ∈ [1, ∞): assumption 0
+                • [-1, 0, 3] ∈ [-2, ∞): assumption 5
+            • [0, 2, -3] ∈ [0, ∞): -1 * x + 1 * y combo of:
+              • [1, -2] ∈ {1}: combination of:
+                • [1, -2] ∈ (-∞, 1]: tidying up:
+                  • [-1, 2] ∈ [-1, ∞): assumption 2
+                • [1, -2] ∈ [1, ∞): assumption 0
+              • [1, 0, -3] ∈ [1, ∞): assumption 3
+    [omega] omega found a contradiction, proving False
+[omega] ✅️ Assuming fact:
+      5 < n % 6
+  [omega] adding fact: 5 < n % 6
+  [omega] adding fact: 5 + 1 ≤ n % 6
+  [omega] adding fact: 0 ≤ n % 6 - (5 + 1)
+  [omega] processing n % 6 - (5 + 1)
+  [omega] processing n % 6
+  [omega] rewriting n % 6 via Int.emod_def n 6 : n % 6 = n - 6 * (n / 6)
+  [omega] processing n - 6 * (n / 6)
+  [omega] Found in cache: n
+  [omega] processing 6 * (n / 6)
+  [omega] processing 6
+  [omega] processing n / 6
+  [omega] New atom: n / 6
+  [omega] New facts: [6 * (n / 6) ≤ n, n < 6 * (n / 6) + 6]
+  [omega] processing 5 + 1
+  [omega] Adding proof of -6 + 1 * x1 + 0 * x2 + 0 * x3 + -6 * x4 ≥ 0
+  [omega] adding fact: 6 * (n / 6) ≤ n
+  [omega] adding fact: 0 ≤ n - 6 * (n / 6)
+  [omega] Found in cache: n - 6 * (n / 6)
+  [omega] Adding proof of 0 + 1 * x1 + 0 * x2 + 0 * x3 + -6 * x4 ≥ 0
+  [omega] adding fact: n < 6 * (n / 6) + 6
+  [omega] adding fact: n + 1 ≤ 6 * (n / 6) + 6
+  [omega] adding fact: 0 ≤ 6 * (n / 6) + 6 - (n + 1)
+  [omega] processing 6 * (n / 6) + 6 - (n + 1)
+  [omega] processing 6 * (n / 6) + 6
+  [omega] Found in cache: 6 * (n / 6)
+  [omega] Found in cache: 6
+  [omega] Found in cache: n + 1
+  [omega] Adding proof of 5 + -1 * x1 + 0 * x2 + 0 * x3 + 6 * x4 ≥ 0
+  [omega] Extracted linear arithmetic problem:
+      Atoms: [n, n / 2, n / 3, n / 6]
+      impossible
+  [omega] After elimination:
+      Atoms: [n, n / 2, n / 3, n / 6]
+      impossible
+  [omega] Justification:
+      [0, 1, 0, -3] ∈ ∅: combination of:
+      • [0, 1, 0, -3] ∈ (-∞, 2]: tidying up:
+        • [0, -2, 0, 6] ∈ [-4, ∞): 1 * x + 1 * y combo of:
+          • [1, -2] ∈ {1}: combination of:
+            • [1, -2] ∈ (-∞, 1]: tidying up:
+              • [-1, 2] ∈ [-1, ∞): assumption 2
+            • [1, -2] ∈ [1, ∞): assumption 0
+          • [-1, 0, 0, 6] ∈ [-5, ∞): assumption 8
+      • [0, 1, 0, -3] ∈ [3, ∞): tidying up:
+        • [0, 2, 0, -6] ∈ [5, ∞): -1 * x + 1 * y combo of:
+          • [1, -2] ∈ {1}: combination of:
+            • [1, -2] ∈ (-∞, 1]: tidying up:
+              • [-1, 2] ∈ [-1, ∞): assumption 2
+            • [1, -2] ∈ [1, ∞): assumption 0
+          • [1, 0, 0, -6] ∈ [6, ∞): assumption 6
+  [omega] omega found a contradiction, proving False
