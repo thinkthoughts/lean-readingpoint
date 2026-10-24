@@ -1,4 +1,0 @@
-/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_limits__omega_gi.lean:14:2: error: The tactic provided to `fail_if_success` succeeded but was expected to fail:
-  omega_gi
-/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/omega_int_not_dvd_limits__omega_gi.lean:17:2: error: The tactic provided to `fail_if_success` succeeded but was expected to fail:
-  omega_gi

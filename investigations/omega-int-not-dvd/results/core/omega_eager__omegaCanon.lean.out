@@ -1,4 +1,0 @@
-/home/claude/inv/investigations/omega-int-not-dvd/harness/bench/tests/core_omega_eager__omegaCanon.lean:13:0: warning: Definition `filter_length` is a proposition; use `theorem` instead of `def`
-
-Note: This linter can be disabled with `set_option linter.defProp false`
-exit 0
