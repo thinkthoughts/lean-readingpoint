@@ -1,4 +1,0 @@
-[omega] adding fact: ¬3 ∣ x
-[omega] deferring fact: 0 < x % 3
-[omega] Extracted linear arithmetic problem:
-[omega] Case splitting on y < 0 ∨ y > 0
